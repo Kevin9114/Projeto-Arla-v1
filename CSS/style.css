@@ -3,6 +3,8 @@ body{
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    max-width: 500px;
+    min-width: 430px;
 }/*479,768,1024,1300*/
 
 .hidden{
@@ -11,7 +13,6 @@ body{
 }
 .header{
     width: 90%;
-    min-width: 500px;
     margin: 20px auto;
 }
 .menu{
@@ -76,12 +77,14 @@ body{
     width: 100%;
     height: 100%;
 }
+main{
+    background-color: red;
+}
 .main-content{
     width: 100%;
     color: white;
     background-color: #161616;
-    padding: 10px;
-    margin: 0;
+    margin: auto;
 }
 .galeria{}
 .imagem-galeria{
@@ -112,6 +115,9 @@ section .beneficios{}
     padding: 15px;
 }
 @media screen and (min-width: 64rem){
+    body{
+        max-width: 125rem;
+    }
     .hidden{
         display: block;
         opacity: 1;
