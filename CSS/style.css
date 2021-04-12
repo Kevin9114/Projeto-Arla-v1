@@ -39,19 +39,19 @@ body{
     transition: all linear 0.5s;
     background-color: #0f8939;
 }
-.texto{
+.texto-layout{
     margin: 20px auto;
 }
-.texto h2{
+.texto-layout h2{
     display: inline-block;
     font-size: 2.5em;
     line-height: 1.2;
     margin: 20px;
 }
-.texto h2 span{
+.texto-layout h2 span{
     color: #01a13d;
 }
-.texto p{
+.texto-layout p{
     font-size: 1em;
     line-height: 1.5;
     display: inline-block;
@@ -60,7 +60,7 @@ body{
     margin: 20px;
     letter-spacing: 1px;
 }
-.texto a{
+.texto-layout a{
     display: inline-block;
     border-radius: 5px;
     margin: 20px;
@@ -69,26 +69,25 @@ body{
     padding: 5px 20px;
     color: white;
 }
-.imagem{
+.imagem-layout{
     width: 90%;
 }
-.imagem img{
+.imagem-layout img{
     min-width: 570px;
     min-height: 520px;
     width: 100%;
     height: 100%;
 }
-main{
-    background-color: red;
-}
 .main-content{
-    padding: 20px 0;
     width: 100%;
     color: white;
-    background-color: #161616;
     margin: auto;
 }
-.galeria{}
+.fundo-negro{
+    padding: 20px 0;
+    margin: 0;
+    background-color: #161616;
+}
 .imagem-galeria{
     width: 90%;
     padding: 10px;
@@ -107,6 +106,7 @@ section .beneficios{}
     align-items: center;
     background-color: #222222;
     margin: 20px;
+    box-sizing: border-box;
 }
 .card span{
     padding: 10px;
@@ -115,6 +115,75 @@ section .beneficios{}
     font-size: 0.8em;
     text-align: center;
     padding: 15px;
+}
+footer{
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+}
+.contacts{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.contacts span{
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.contacts span[class^=icon]{
+    font-size: 1.2em;
+}
+.contacts a{
+    text-decoration: none;
+    color: dodgerblue;
+    font: bold;
+}
+
+.about{
+    margin: 10px;
+}
+.about h3{
+    font-weight: bold;
+    margin: 20px 0;
+}
+.incons{
+    display: flex;
+}
+.incons span{
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2em;
+    background-color: #333;
+}
+.texto{
+    color: black;
+}
+.texto h3{
+    display: inline-block;
+    margin: 20px 30px;
+    font-size: 1.876em;
+    border-bottom: 10px solid #01a13d;
+}
+.texto p{
+    margin: 0;
+    padding: 20px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.imagem{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.imagem img{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 @media screen and (min-width: 64rem){
     body{
@@ -149,19 +218,19 @@ section .beneficios{}
     .layout{
         display: flex;
     }
-    .texto{
+    .texto-layout{
         padding: 20px;
         width: 50%;
     }
-    .texto p{
+    .texto-layout p{
         display: block;
         margin: 40px 20px;
         font-size: 1em;
     }
-    .texto a{
+    .texto-layout a{
         margin: 20px;
     }
-    .imagem{
+    .imagem-layout{
         width: 50%;
     }
     .galeria{
@@ -171,7 +240,7 @@ section .beneficios{}
     }
     .imagem-galeria{
         padding: 10px;
-        height: auto;
+        height: 200px;
     }
     .imagem-galeria img{
         height: 100%;
@@ -180,7 +249,7 @@ section .beneficios{}
     .beneficios{
         display: grid;
         grid-template-columns:repeat(6, 1fr);
-        grid-template-rows:repeat(3, 1fr);
+        grid-template-rows:repeat(2, 1fr);
     }
     .card span[class^=icon]{
         font-size: 1.2em;
@@ -200,5 +269,33 @@ section .beneficios{}
     .card4{
         grid-row:2 / 3 ;
         grid-column: 4 / 6;
+    }
+    .teste{
+        height: 500px;
+        display: flex;
+    }
+    .texto{
+        width: 50%;
+    }
+    .imagem{
+        width: 50%;
+    }
+    .imagem img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        grid-gap: 50px;
+    }
+    .contact{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .about{
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
     }
 }

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?lrd9be');
-  src:  url('fonts/icomoon.eot?lrd9be#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?lrd9be') format('truetype'),
-    url('fonts/icomoon.woff?lrd9be') format('woff'),
-    url('fonts/icomoon.svg?lrd9be#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ryn1sx');
+  src:  url('fonts/icomoon.eot?ryn1sx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ryn1sx') format('truetype'),
+    url('fonts/icomoon.woff?ryn1sx') format('woff'),
+    url('fonts/icomoon.svg?ryn1sx#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,6 +28,12 @@
 .icon-office:before {
   content: "\e903";
 }
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location2:before {
+  content: "\e948";
+}
 .icon-user-tie:before {
   content: "\e976";
 }
@@ -36,4 +42,19 @@
 }
 .icon-flag:before {
   content: "\e9cc";
+}
+.icon-mail3:before {
+  content: "\ea85";
+}
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
 }
