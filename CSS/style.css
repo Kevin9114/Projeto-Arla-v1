@@ -1,17 +1,20 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-size: 1.2em;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    min-width: 430px;
-}/*479,768,1024,1300*/
+}
+#principal{}
 .hidden{
     display: none;
     opacity: 0;
 }
 .header{
     width: 90%;
-    margin: 20px auto;
+    margin: auto;
 }
 .menu{
     text-align: center;
@@ -44,7 +47,6 @@ body{
     display: inline-block;
     font-size: 2.5em;
     line-height: 1.2;
-    margin: 20px;
 }
 .texto-layout h2 span{
     color: #01a13d;
@@ -55,13 +57,12 @@ body{
     display: inline-block;
     border-left: 10px solid #01a13d;
     padding-left: 10px;
-    margin: 20px;
     letter-spacing: 1px;
+    box-sizing: border-box;
 }
 .texto-layout .saiba-mais{
     display: inline-block;
     border-radius: 5px;
-    margin: 20px;
     background-color: #01a13d;
     text-decoration: none;
     padding: 5px 20px;
@@ -124,7 +125,7 @@ body{
     padding: 15px;
 }
 footer{
-    background-color: #222;
+    background-color: #161616;
     color: white;
     padding: 10px 20px;
     margin: 0;
@@ -169,6 +170,10 @@ footer{
     font-size: 1.2em;
     background-color: #333;
 }
+.about-us{
+    margin: auto;
+    width: 90%;
+}
 .texto{
     color: black;
 }
@@ -195,9 +200,6 @@ footer{
     height: 100%;
 }
 @media screen and (min-width: 64rem){
-    body{
-        max-width: 125rem;
-    }
     .hidden{
         display: block;
         opacity: 1;
@@ -233,7 +235,6 @@ footer{
     }
     .texto-layout p{
         display: block;
-        margin: 40px 20px;
         font-size: 1em;
     }
     .texto-layout a{
