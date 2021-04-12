@@ -99,7 +99,6 @@ body{
 }
 .imagem-galeria{
     width: 90%;
-    padding: 10px;
     margin: auto;
 }
 .imagem-galeria img{
@@ -129,15 +128,17 @@ footer{
     color: white;
     padding: 10px 20px;
     margin: 0;
+    text-align: center;
 }
 .contacts{
-    display: flex;
+    display: inline-flexbox;
     align-items: center;
     margin: 10px;
     color: white;
     border-radius: 5px;
 }
 .contacts span{
+    background-color: #333;
     padding: 10px;
     border-radius: 50%;
     margin: 10px;
@@ -150,15 +151,19 @@ footer{
     color: dodgerblue;
     font: bold;
 }
+hr{
+    border: 3px solid #01a13d;
+    border-radius: 3px;
+}
 .about{
-    margin: 10px;
+    margin: 20px;
 }
 .about h3{
     font-weight: bold;
     margin: 20px 0;
 }
 .incons{
-    display: flex;
+    display: inline-flexbox;
 }
 .incons a{
     text-decoration: none;
@@ -246,19 +251,20 @@ footer{
     .galeria{
         margin: 60px auto;
         display: flex;
-        width: 65%;
+        width: 90%;
     }
     .imagem-galeria{
         padding: 10px;
-        height: 200px;
+        height: 250px;
     }
     .imagem-galeria img{
         height: 100%;
         width: 100%;
     }
     .beneficios{
+        padding: 0 20px;
         display: grid;
-        grid-template-columns:repeat(6, 1fr);
+        grid-template-columns:repeat(4, 1fr);
         grid-template-rows:repeat(2, 1fr);
     }
     .card span[class^=icon]{
@@ -266,19 +272,19 @@ footer{
     }
     .card1{
         grid-row:1 / 2 ;
-        grid-column: 2 / 4;
+        grid-column: 1 / 3;
     }
     .card2{
         grid-row:1 / 2 ;
-        grid-column: 4 / 6;
+        grid-column: 3 / 5;
     }
     .card3{
         grid-row:2 / 3 ;
-        grid-column: 2 / 4;
+        grid-column: 1 / 3;
     }
     .card4{
         grid-row:2 / 3 ;
-        grid-column: 4 / 6;
+        grid-column: 3 / 5;
     }
     .about-us{
         height: 500px;
@@ -296,6 +302,7 @@ footer{
         height: 100%;
     }
     footer{
+        text-align: start;
         display: grid;
         grid-template-columns: 1fr 100px 1fr;
         grid-gap: 50px;
@@ -303,6 +310,12 @@ footer{
     .contact{
         grid-row: 1 / 2;
         grid-column: 1 / 2;
+    }
+    .contacts{
+        display: flex;
+    }
+    .incons{
+        display: flex;
     }
     .about{
         grid-row: 1 / 2;
