@@ -1,19 +1,20 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-size: 1.2em;
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 500px;
-    min-width: 430px;
-}/*479,768,1024,1300*/
-
+}
+#principal{}
 .hidden{
     display: none;
     opacity: 0;
 }
 .header{
     width: 90%;
-    margin: 20px auto;
+    margin: auto;
 }
 .menu{
     text-align: center;
@@ -23,8 +24,8 @@ body{
     height: 55px;
     width: 70px;
 }
-.logo img{}
 .menu-right{
+    border-radius: 5px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -39,64 +40,75 @@ body{
 .menu-right li a:hover{
     transition: all linear 0.5s;
     background-color: #0f8939;
+    border-radius: 5px;
 }
-.texto{
+.texto-layout{
     margin: 20px auto;
 }
-.texto h2{
+.texto-layout h2{
     display: inline-block;
     font-size: 2.5em;
     line-height: 1.2;
-    margin: 20px;
 }
-.texto h2 span{
+.texto-layout h2 span{
     color: #01a13d;
 }
-.texto p{
+.texto-layout p{
     font-size: 1em;
     line-height: 1.5;
     display: inline-block;
     border-left: 10px solid #01a13d;
     padding-left: 10px;
-    margin: 20px;
     letter-spacing: 1px;
+    box-sizing: border-box;
 }
-.texto a{
+.texto-layout .saiba-mais{
     display: inline-block;
     border-radius: 5px;
-    margin: 20px;
     background-color: #01a13d;
     text-decoration: none;
     padding: 5px 20px;
     color: white;
 }
-.imagem{
+.layout-incons{
+    display: flex;
+    align-items: center;
+}
+.layout-incons a{
+    text-decoration: none;
+    color: #01a13d;
+    margin: 3px;
+    font-size: 1em;
+}
+.imagem-layout{
     width: 90%;
 }
-.imagem img{
+.imagem-layout img{
+    min-width: 570px;
+    min-height: 520px;
     width: 100%;
     height: 100%;
-}
-main{
-    background-color: red;
 }
 .main-content{
     width: 100%;
     color: white;
-    background-color: #161616;
     margin: auto;
 }
-.galeria{}
+.fundo-negro{
+    padding: 20px 0;
+    margin: 0;
+    background-color: #161616;
+}
 .imagem-galeria{
     width: 90%;
-    padding: 10px;
     margin: auto;
 }
 .imagem-galeria img{
+    border-radius: 5px;
+    border: 2px solid white;
     height: 100%;
     width: 100%;
 }
-section .beneficios{}
 .card {
     border-radius: 5px;
     border-left: 10px solid #01a13d;
@@ -105,6 +117,7 @@ section .beneficios{}
     align-items: center;
     background-color: #222222;
     margin: 20px;
+    box-sizing: border-box;
 }
 .card span{
     padding: 10px;
@@ -114,10 +127,89 @@ section .beneficios{}
     text-align: center;
     padding: 15px;
 }
+footer{
+    background-color: #161616;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    text-align: center;
+}
+.contacts{
+    display: inline-flexbox;
+    align-items: center;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.contacts span{
+    background-color: #333;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.contacts span[class^=icon]{
+    font-size: 1.2em;
+}
+.contacts a{
+    text-decoration: none;
+    color: dodgerblue;
+    font: bold;
+}
+hr{
+    border: 3px solid #01a13d;
+    border-radius: 3px;
+}
+.about{
+    margin: 20px;
+}
+.about h3{
+    font-weight: bold;
+    margin: 20px 0;
+}
+.incons{
+    display: inline-flexbox;
+}
+.incons a{
+    text-decoration: none;
+    color: white;
+}
+.incons span{
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    background-color: #333;
+}
+.about-us{
+    margin: auto;
+    width: 90%;
+}
+.texto{
+    color: black;
+}
+.texto h3{
+    display: inline-block;
+    margin: 20px 30px;
+    font-size: 1.876em;
+    border-bottom: 10px solid #01a13d;
+}
+.texto p{
+    margin: 0;
+    padding: 20px;
+    font-size: 1em;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+.imagem{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.imagem img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
 @media screen and (min-width: 64rem){
-    body{
-        max-width: 125rem;
-    }
     .hidden{
         display: block;
         opacity: 1;
@@ -147,56 +239,91 @@ section .beneficios{}
     .layout{
         display: flex;
     }
-    .texto{
+    .texto-layout{
         padding: 20px;
         width: 50%;
     }
-    .texto p{
+    .texto-layout p{
         display: block;
-        margin: 40px 20px;
         font-size: 1em;
     }
-    .texto a{
+    .texto-layout a{
         margin: 20px;
     }
-    .imagem{
+    .imagem-layout{
         width: 50%;
     }
     .galeria{
         margin: 60px auto;
         display: flex;
-        width: 65%;
+        width: 90%;
     }
     .imagem-galeria{
         padding: 10px;
-        height: auto;
+        height: 250px;
     }
     .imagem-galeria img{
         height: 100%;
         width: 100%;
     }
     .beneficios{
+        padding: 0 20px;
         display: grid;
-        grid-template-columns:repeat(6, 1fr);
-        grid-template-rows:repeat(3, 1fr);
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows:repeat(2, 1fr);
     }
     .card span[class^=icon]{
         font-size: 1.2em;
     }
     .card1{
         grid-row:1 / 2 ;
-        grid-column: 2 / 4;
+        grid-column: 1 / 3;
     }
     .card2{
         grid-row:1 / 2 ;
-        grid-column: 4 / 6;
+        grid-column: 3 / 5;
     }
     .card3{
         grid-row:2 / 3 ;
-        grid-column: 2 / 4;
+        grid-column: 1 / 3;
     }
     .card4{
         grid-row:2 / 3 ;
-        grid-column: 4 / 6;
+        grid-column: 3 / 5;
+    }
+    .about-us{
+        height: 500px;
+        display: flex;
+    }
+    .texto{
+        width: 50%;
+    }
+    .imagem{
+        width: 50%;
+    }
+    .imagem img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    footer{
+        text-align: start;
+        display: grid;
+        grid-template-columns: 1fr 100px 1fr;
+        grid-gap: 50px;
+    }
+    .contact{
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+    }
+    .contacts{
+        display: flex;
+    }
+    .incons{
+        display: flex;
+    }
+    .about{
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
     }
 }
