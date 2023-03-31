@@ -40,6 +40,7 @@ body{
 .menu-right li a:hover{
     transition: all linear 0.5s;
     background-color: #0f8939;
+    border-radius: 5px;
 }
 .texto-layout{
     margin: 20px auto;
@@ -103,6 +104,8 @@ body{
     margin: auto;
 }
 .imagem-galeria img{
+    border-radius: 5px;
+    border: 2px solid white;
     height: 100%;
     width: 100%;
 }
@@ -174,6 +177,7 @@ hr{
     padding: 10px;
     margin: 5px;
     font-size: 1.2em;
+    border-radius: 5px;
     background-color: #333;
 }
 .about-us{
